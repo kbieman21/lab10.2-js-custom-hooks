@@ -6,13 +6,6 @@ function UseDebounceSearch() {
   const [delay, setDelay] = useState(500);
   const debouncedValue = useDebounce(text, delay);
 
-  // const formatedDelay= 1;
-
-  // if(delay <=0){
-  //   formatedDelay = 1;
-  // }else{
-  //   formatedDelay = delay;
-  // }
   
   return (
     <div>
@@ -36,11 +29,12 @@ function UseDebounceSearch() {
       <div><b>Debounced Value (after {delay}ms):</b> {debouncedValue}</div>
       <div>Simulated Search Results</div>
       <div>
-        <ul>
+         {text !=="" ?  
+        (<ul>
           <li>Result for {text}: Item 1</li>
           <li>Result for {text}: Item 2</li>
           <li>Result for {text}: Item 3</li>
-        </ul>
+        </ul>) : <p>Type to see results.</p>}
       </div>
     </div>
   );

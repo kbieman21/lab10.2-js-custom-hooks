@@ -75,20 +75,3 @@ button:focus-visible {
   font-weight: bold;
 }
 
-.next-button{
-  padding: var(--btn-padding);
-  border-radius: var(--btn-radius);
-  font: var(--btn-font);
-  cursor: pointer;
-
-  background: gray;
-  color: blue;
-  border: 10;
-
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-.prev-button{
-
-}
